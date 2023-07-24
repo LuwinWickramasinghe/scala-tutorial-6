@@ -26,7 +26,7 @@ object CaesarCipher {
     println("Enter a word: ")
     val word = scala.io.StdIn.readLine
 
-    println("Enter a shifter value")
+    println("Enter a shifter value (To decrypt enter a minus value of the shifter")
     val shifter = scala.io.StdIn.readInt
     
     val encryptedText = Cipher(word, encrypt, shifter)
